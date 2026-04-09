@@ -1,0 +1,43 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Label", "value": "WeZienWel Records" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/criskai",       "destination": "https://distrokid.com/hyperfollow/criskai/there-is-a-place-original-mix?ref=release", "permanent": false },
+    { "source": "/wzw037",        "destination": "https://distrokid.com/hyperfollow/criskai/there-is-a-place-original-mix?ref=release", "permanent": false },
+    { "source": "/there-is-a-place", "destination": "https://distrokid.com/hyperfollow/criskai/there-is-a-place-original-mix?ref=release", "permanent": false },
+
+    { "source": "/promo/037",     "destination": "https://drive.google.com/REPLACE_WITH_PROMO_LINK", "permanent": false },
+    { "source": "/promo/criskai", "destination": "https://drive.google.com/REPLACE_WITH_PROMO_LINK", "permanent": false },
+
+    { "source": "/wzw036", "destination": "https://wezienwelrecords.bandcamp.com/album/in-the-shade-of-the-moon-remix-ep-wzw-036", "permanent": false },
+    { "source": "/wzw035", "destination": "https://wezienwelrecords.bandcamp.com/album/bangers-ep-wzw-035", "permanent": false },
+    { "source": "/wzw034", "destination": "https://wezienwelrecords.bandcamp.com/album/like-leaves-ep-fbr-wzw-034", "permanent": false },
+    { "source": "/wzw033", "destination": "https://wezienwelrecords.bandcamp.com/album/fbr-studio-archive-bandcamp-exclusive-wzw-033", "permanent": false },
+    { "source": "/wzw032", "destination": "https://wezienwelrecords.bandcamp.com/album/dorkmeister-ep-wzw-032", "permanent": false },
+    { "source": "/wzw031", "destination": "https://wezienwelrecords.bandcamp.com/track/excuse-me-ft-victoria-chase-wzw-031", "permanent": false },
+    { "source": "/wzw030", "destination": "https://wezienwelrecords.bandcamp.com/track/thin-king-wzw-030-2", "permanent": false },
+    { "source": "/wzw029", "destination": "https://wezienwelrecords.bandcamp.com/album/in-the-shade-of-the-moon-ep-wzw-029", "permanent": false },
+    { "source": "/wzw028", "destination": "https://wezienwelrecords.bandcamp.com/album/innovation-lost-ep-wzw-028", "permanent": false },
+    { "source": "/wzw027", "destination": "https://wezienwelrecords.bandcamp.com/album/the-lake-corkhills-farmhouse-wzw-027", "permanent": false },
+
+    { "source": "/bc",            "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
+    { "source": "/ig",            "destination": "https://instagram.com/wezienwel.records", "permanent": false },
+    { "source": "/sc",            "destination": "https://soundcloud.com/wezienwelrecords", "permanent": false },
+    { "source": "/yt",            "destination": "https://youtube.com/@wezienwelrecords", "permanent": false },
+    { "source": "/spotify",       "destination": "https://open.spotify.com/user/REPLACE", "permanent": false },
+
+    { "source": "/demo",          "destination": "mailto:connect@flipandtrip.com?subject=Demo%20submission", "permanent": false },
+    { "source": "/press",         "destination": "mailto:connect@flipandtrip.com?subject=Press", "permanent": false },
+    { "source": "/booking",       "destination": "mailto:connect@flipandtrip.com?subject=Booking", "permanent": false }
+  ]
+}
