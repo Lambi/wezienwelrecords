@@ -16,8 +16,9 @@
     { "source": "/wzw037",        "destination": "https://distrokid.com/hyperfollow/criskai/there-is-a-place-original-mix?ref=release", "permanent": false },
     { "source": "/there-is-a-place", "destination": "https://distrokid.com/hyperfollow/criskai/there-is-a-place-original-mix?ref=release", "permanent": false },
 
-    { "source": "/promo/037",     "destination": "https://drive.google.com/REPLACE_WITH_PROMO_LINK", "permanent": false },
-    { "source": "/promo/criskai", "destination": "https://drive.google.com/REPLACE_WITH_PROMO_LINK", "permanent": false },
+    { "source": "/promo/037",            "destination": "https://promo.fatdrop.co.uk/e/280415FFjXMeY1RixbmnscMxzsBIs7OxravxrKhG", "permanent": false },
+    { "source": "/promo/criskai",        "destination": "https://promo.fatdrop.co.uk/e/280415FFjXMeY1RixbmnscMxzsBIs7OxravxrKhG", "permanent": false },
+    { "source": "/promo/thereisaplace",  "destination": "https://promo.fatdrop.co.uk/e/280415FFjXMeY1RixbmnscMxzsBIs7OxravxrKhG", "permanent": false },
 
     { "source": "/wzw036", "destination": "https://wezienwelrecords.bandcamp.com/album/in-the-shade-of-the-moon-remix-ep-wzw-036", "permanent": false },
     { "source": "/wzw035", "destination": "https://wezienwelrecords.bandcamp.com/album/bangers-ep-wzw-035", "permanent": false },
