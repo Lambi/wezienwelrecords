@@ -1,0 +1,46 @@
+{
+  "name": "WeZienWel Records",
+  "short_name": "WeZienWel",
+  "description": "A living symbiosis of sound and friendship. Independent house, deep, jazz and jam label. AMS · GHE · LIS · Est. 2019.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F2EEE5",
+  "theme_color": "#0E0E0C",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["music", "entertainment", "art"],
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/wzw037-cover.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Latest release",
+      "short_name": "New",
+      "url": "/there-is-a-place",
+      "description": "WZW-037 — There Is A Place"
+    },
+    {
+      "name": "Catalogue",
+      "short_name": "Records",
+      "url": "/#cat"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "url": "/#contact"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WeZienWel Records — Brand Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F2EEE5; --ink: #0E0E0C; --ghost: #1A1A17;
+    --dust: #B8B3A8; --red: #E23D28; --blue: #1F3BFF;
+    --serif: "EB Garamond", Georgia, serif;
+    --sans: "Space Grotesk", system-ui, sans-serif;
+    --mono: "JetBrains Mono", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.4; }
+  a { color: var(--red); }
+
+  .page { max-width: 900px; margin: 0 auto; padding: 60px 40px 100px; }
+
+  /* Cover */
+  .cover { background: var(--ink); color: var(--paper); padding: 80px 60px; margin-bottom: 80px; border-left: 12px solid var(--red); }
+  .cover h1 { font-family: var(--serif); font-weight: 800; font-style: italic; font-size: 80px; line-height: .88; letter-spacing: -.03em; margin-bottom: 28px; }
+  .cover h1 em { color: var(--red); }
+  .cover .sub { font-family: var(--mono); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--dust); }
+
+  /* Sections */
+  .section { margin-bottom: 80px; border-top: 2px solid var(--ink); padding-top: 40px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .16em; color: var(--dust); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+  .eyebrow::before { content: ""; width: 36px; height: 2px; background: var(--ink); display: inline-block; }
+  h2 { font-family: var(--serif); font-weight: 800; font-style: italic; font-size: 56px; line-height: .9; letter-spacing: -.02em; margin-bottom: 32px; }
+  h2 em { color: var(--red); }
+  h3 { font-family: var(--mono); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 12px; color: var(--ghost); }
+  p { font-family: var(--sans); font-size: 16px; line-height: 1.6; margin-bottom: 16px; max-width: 620px; color: var(--ghost); }
+
+  /* Color swatches */
+  .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+  .swatch { border: 1.5px solid var(--ink); overflow: hidden; }
+  .swatch-color { height: 80px; }
+  .swatch-info { padding: 12px 14px; background: var(--paper); border-top: 1.5px solid var(--ink); }
+  .swatch-name { font-family: var(--mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+  .swatch-hex { font-family: var(--mono); font-size: 13px; color: var(--dust); margin-top: 4px; }
+  .swatch-role { font-family: var(--sans); font-size: 12px; color: var(--dust); margin-top: 4px; }
+
+  /* Type specimens */
+  .type-specimens { display: grid; gap: 24px; margin-top: 24px; }
+  .type-card { border: 1.5px solid var(--ink); padding: 28px 28px 20px; }
+  .type-card .sample { margin-bottom: 12px; }
+  .type-card .meta { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: var(--dust); border-top: 1px solid #ddd; padding-top: 10px; }
+
+  /* Logo rules */
+  .logo-rules { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+  .logo-do, .logo-dont { border: 1.5px solid var(--ink); padding: 24px; }
+  .logo-do { border-left: 6px solid #2ea84f; }
+  .logo-dont { border-left: 6px solid var(--red); }
+  .tag { font-family: var(--mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 12px; }
+  .tag-do { color: #2ea84f; }
+  .tag-dont { color: var(--red); }
+
+  /* Assets table */
+  table { width: 100%; border-collapse: collapse; margin-top: 24px; font-family: var(--mono); font-size: 12px; }
+  th { text-align: left; padding: 10px 14px; background: var(--ink); color: var(--paper); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 10px; }
+  td { padding: 12px 14px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:last-child td { border-bottom: 2px solid var(--ink); }
+  td:first-child { font-weight: 600; color: var(--ink); }
+  td code { background: #e8e4db; padding: 2px 6px; font-size: 11px; }
+
+  /* Tone of voice */
+  .tone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+  .tone-card { border: 1.5px solid var(--ink); padding: 20px; }
+  .tone-card h4 { font-family: var(--mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--red); margin-bottom: 10px; }
+  .tone-card p { font-size: 14px; margin: 0; }
+
+  footer { margin-top: 80px; padding-top: 28px; border-top: 2px solid var(--ink); font-family: var(--mono); font-size: 11px; color: var(--dust); text-transform: uppercase; letter-spacing: .1em; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- COVER -->
+  <div class="cover">
+    <h1>WeZienWel<br><em>Records.</em></h1>
+    <div class="sub">Brand Style Guide · v1.0 · 2026 · Confidential</div>
+  </div>
+
+  <!-- 1. BRAND ESSENCE -->
+  <div class="section">
+    <div class="eyebrow">01</div>
+    <h2>Brand <em>Essence</em></h2>
+    <p><strong style="font-family:var(--serif);font-size:20px;font-style:italic">A living symbiosis of sound and friendship.</strong></p>
+    <p>WeZienWel Records is an independent house, deep, jazz and jam label founded in 2019 in Ghent — now spanning Amsterdam, Ghent, and Lisbon. It is more than a label; it is a current shaped by shared moments. Jamming is our language.</p>
+    <p>The brand is editorial, honest, and warm — typographically strong, never corporate. Everything communicates substance over style, with the red as the only moment of emotion.</p>
+
+    <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <div>
+        <h3>Mission</h3>
+        <p style="font-size:14px">Release music that matters to people who feel it. No genre gatekeeping, no ego — just frequency.</p>
+      </div>
+      <div>
+        <h3>Personality</h3>
+        <p style="font-size:14px">Warm · Editorial · Honest · Understated · Rooted · Alive</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. COLORS -->
+  <div class="section">
+    <div class="eyebrow">02</div>
+    <h2>The <em>Palette.</em></h2>
+    <p>Five colours. The red is the only expressive element — use it sparingly and with intent. Paper and Ink do 90% of the work.</p>
+
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F2EEE5;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Paper</div>
+          <div class="swatch-hex">#F2EEE5</div>
+          <div class="swatch-role">Primary background · warm off-white</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#0E0E0C;"></div>
+        <div class="swatch-info" style="background:#F2EEE5">
+          <div class="swatch-name">Ink</div>
+          <div class="swatch-hex">#0E0E0C</div>
+          <div class="swatch-role">Primary text · dark backgrounds</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E23D28;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Red</div>
+          <div class="swatch-hex">#E23D28</div>
+          <div class="swatch-role">Accent · emotion · alerts · CTAs</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#B8B3A8; border-bottom: 1.5px solid #ccc;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Dust</div>
+          <div class="swatch-hex">#B8B3A8</div>
+          <div class="swatch-role">Secondary text · metadata · captions</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1A1A17;"></div>
+        <div class="swatch-info" style="background:#F2EEE5">
+          <div class="swatch-name">Ghost</div>
+          <div class="swatch-hex">#1A1A17</div>
+          <div class="swatch-role">Dark mode body text · subtle UI</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1F3BFF;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Blue</div>
+          <div class="swatch-hex">#1F3BFF</div>
+          <div class="swatch-role">Reserved · use only when needed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. TYPOGRAPHY -->
+  <div class="section">
+    <div class="eyebrow">03</div>
+    <h2>Type<em>faces.</em></h2>
+    <p>Three type families — each with a clear job. Never mix roles. All three are free via Google Fonts.</p>
+
+    <div class="type-specimens">
+      <div class="type-card">
+        <div class="sample">
+          <div style="font-family:'EB Garamond',serif;font-weight:800;font-style:italic;font-size:60px;line-height:.9;letter-spacing:-.02em">WeZienWel<em style="color:var(--red)">.</em></div>
+        </div>
+        <div class="meta">
+          <strong>EB Garamond</strong> — Serif · Headlines · Display · Italic 800<br>
+          Google Fonts: <code>EB Garamond</code> · Use for: H1, H2, pull quotes, names<br>
+          <a href="https://fonts.google.com/specimen/EB+Garamond">fonts.google.com/specimen/EB+Garamond</a>
+        </div>
+      </div>
+
+      <div class="type-card">
+        <div class="sample">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:36px;letter-spacing:-.01em">Independent. Rooted. Alive.</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:400;font-size:16px;margin-top:8px;color:var(--ghost)">Body copy and navigation. Readable at all sizes.</div>
+        </div>
+        <div class="meta">
+          <strong>Space Grotesk</strong> — Sans-serif · UI · Body · Navigation<br>
+          Google Fonts: <code>Space Grotesk</code> · Use for: nav, body, buttons, UI labels<br>
+          <a href="https://fonts.google.com/specimen/Space+Grotesk">fonts.google.com/specimen/Space+Grotesk</a>
+        </div>
+      </div>
+
+      <div class="type-card">
+        <div class="sample">
+          <div style="font-family:'JetBrains Mono',monospace;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--red)">WZW-037 · DIGITAL · 10.04.2026</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-weight:400;font-size:12px;margin-top:6px;color:var(--ghost)">AMS · GHE · LIS  ·  EST. 2019  ·  wezienwelrecords.com</div>
+        </div>
+        <div class="meta">
+          <strong>JetBrains Mono</strong> — Monospace · Labels · Metadata · Catalog numbers<br>
+          Google Fonts: <code>JetBrains Mono</code> · Use for: catalog refs, dates, locations, tags<br>
+          <a href="https://fonts.google.com/specimen/JetBrains+Mono">fonts.google.com/specimen/JetBrains+Mono</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;padding:24px;background:var(--ink);color:var(--paper);">
+      <h3 style="color:var(--dust);margin-bottom:16px">Type Scale</h3>
+      <table style="color:var(--paper)">
+        <tr><th>Role</th><th>Family</th><th>Size</th><th>Weight</th><th>Case</th></tr>
+        <tr><td>Hero / H1</td><td>EB Garamond</td><td>clamp(68px, 19vw, 240px)</td><td>800 Italic</td><td>Mixed</td></tr>
+        <tr><td>Section H2</td><td>EB Garamond</td><td>clamp(52px, 13vw, 130px)</td><td>800 Italic</td><td>Mixed</td></tr>
+        <tr><td>Card title</td><td>EB Garamond</td><td>17–19px</td><td>800</td><td>Mixed</td></tr>
+        <tr><td>Navigation</td><td>Space Grotesk</td><td>11px</td><td>600</td><td>Uppercase</td></tr>
+        <tr><td>Body</td><td>Space Grotesk</td><td>16px</td><td>400</td><td>Mixed</td></tr>
+        <tr><td>Labels / Tags</td><td>JetBrains Mono</td><td>9–13px</td><td>600</td><td>Uppercase + 0.12em spacing</td></tr>
+        <tr><td>URLs / Fine print</td><td>JetBrains Mono</td><td>9–11px</td><td>400</td><td>Lowercase</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 4. LOGO USAGE -->
+  <div class="section">
+    <div class="eyebrow">04</div>
+    <h2>Logo <em>Rules.</em></h2>
+    <p>The wordmark is the logo — "WeZienWel" in EB Garamond 800 + "Records" in JetBrains Mono. The SVG logo file lives in <code>/assets/logo.svg</code>.</p>
+
+    <div class="logo-rules">
+      <div class="logo-do">
+        <div class="tag tag-do">✓ Do</div>
+        <p style="font-size:13px">Use on Paper or Ink backgrounds only. Keep clear space equal to the height of the "W" on all sides. Use the red accent sparingly — one element at most.</p>
+      </div>
+      <div class="logo-dont">
+        <div class="tag tag-dont">✗ Don't</div>
+        <p style="font-size:13px">Don't place on busy photo backgrounds without an overlay. Don't stretch or distort. Don't change font families. Don't use the wordmark smaller than 120px wide.</p>
+      </div>
+      <div class="logo-do">
+        <div class="tag tag-do">✓ Do</div>
+        <p style="font-size:13px">Pair with mono labels like "AMS · GHE · LIS" or "EST. 2019" in Dust colour underneath for context and ground.</p>
+      </div>
+      <div class="logo-dont">
+        <div class="tag tag-dont">✗ Don't</div>
+        <p style="font-size:13px">Don't use Blue as a logo colour. Blue is reserved for rare interactive states only. Never apply drop shadows or effects to the wordmark.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. DESIGN PRINCIPLES -->
+  <div class="section">
+    <div class="eyebrow">05</div>
+    <h2>Design <em>Principles.</em></h2>
+
+    <div class="tone-grid">
+      <div class="tone-card">
+        <h4>Borders over fills</h4>
+        <p>Use 1.5px solid Ink borders to define space. Avoid decorative fills. The border IS the design.</p>
+      </div>
+      <div class="tone-card">
+        <h4>One red rule</h4>
+        <p>Maximum one red element per layout block — a bar, a dot, an italic word. Never two.</p>
+      </div>
+      <div class="tone-card">
+        <h4>Mono for metadata</h4>
+        <p>All catalog numbers, dates, locations, and technical info must be in JetBrains Mono, uppercase, with letter-spacing.</p>
+      </div>
+      <div class="tone-card">
+        <h4>Italic for emotion</h4>
+        <p>EB Garamond italic signals feeling — titles, quotes, the word "Wel" in the logo. Don't dilute it.</p>
+      </div>
+      <div class="tone-card">
+        <h4>White space is structure</h4>
+        <p>Generous padding, minimal elements. The blank space communicates confidence. Don't fill everything.</p>
+      </div>
+      <div class="tone-card">
+        <h4>Paper background first</h4>
+        <p>Default to Paper (#F2EEE5) backgrounds. Use Ink backgrounds for "Now Playing" / hero moments only.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. TONE OF VOICE -->
+  <div class="section">
+    <div class="eyebrow">06</div>
+    <h2>Tone of <em>Voice.</em></h2>
+    <p>The label communicates like a person, not a brand. Warm, brief, and specific — never hype, never corporate.</p>
+
+    <div class="tone-grid" style="margin-top:24px">
+      <div class="tone-card">
+        <h4>Write this</h4>
+        <p style="font-style:italic">"There Is A Place — new music by Cris Kai. Out today. Listen everywhere."</p>
+      </div>
+      <div class="tone-card">
+        <h4>Not this</h4>
+        <p style="font-style:italic">"🔥🔥 HUGE drop just landed!! Our incredible artist Cris Kai is BACK with an ABSOLUTE BANGER!!"</p>
+      </div>
+      <div class="tone-card">
+        <h4>Write this</h4>
+        <p style="font-style:italic">"A living symbiosis of sound and friendship. Est. 2019. Ghent → Amsterdam → Lisbon."</p>
+      </div>
+      <div class="tone-card">
+        <h4>Not this</h4>
+        <p style="font-style:italic">"WeZienWel Records is a leading independent house music label with a globally recognized roster of artists."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. ASSET MAP -->
+  <div class="section">
+    <div class="eyebrow">07</div>
+    <h2>Asset <em>Map.</em></h2>
+    <p>All assets are in the <code>brand-assets/</code> folder. Update the release info (title, artist, catalog number, date) in each asset when a new release drops.</p>
+
+    <table>
+      <tr><th>Asset</th><th>File</th><th>Dimensions</th><th>Format</th><th>Platform</th></tr>
+      <tr>
+        <td>Promo Header</td>
+        <td><code>email-promo/fatdrop-promo-header-600x140.jpg</code></td>
+        <td>600 × 140 px</td>
+        <td>JPG</td>
+        <td>Fatdrop Promo</td>
+      </tr>
+      <tr>
+        <td>Promo Footer</td>
+        <td><code>email-promo/fatdrop-promo-footer-600x60.jpg</code></td>
+        <td>600 × 60 px</td>
+        <td>JPG</td>
+        <td>Fatdrop Promo</td>
+      </tr>
+      <tr>
+        <td>Email Header</td>
+        <td><code>email-promo/fatdrop-email-header-550x120.jpg</code></td>
+        <td>550 × 120 px</td>
+        <td>JPG</td>
+        <td>Fatdrop Email</td>
+      </tr>
+      <tr>
+        <td>Email Footer</td>
+        <td><code>email-promo/fatdrop-email-footer-550x70.jpg</code></td>
+        <td>550 × 70 px</td>
+        <td>JPG</td>
+        <td>Fatdrop Email</td>
+      </tr>
+      <tr>
+        <td>SoundCloud Banner</td>
+        <td><code>soundcloud/soundcloud-banner-2480x520.jpg</code></td>
+        <td>2480 × 520 px</td>
+        <td>JPG</td>
+        <td>SoundCloud Profile</td>
+      </tr>
+      <tr>
+        <td>Album Cover (SC)</td>
+        <td><code>soundcloud/soundcloud-album-cover-800x800.jpg</code></td>
+        <td>800 × 800 px</td>
+        <td>JPG</td>
+        <td>SoundCloud Tracks</td>
+      </tr>
+      <tr>
+        <td>Bandcamp Album Art</td>
+        <td><code>bandcamp/bandcamp-album-art-2000x2000.jpg</code></td>
+        <td>2000 × 2000 px</td>
+        <td>JPG</td>
+        <td>Bandcamp Releases</td>
+      </tr>
+      <tr>
+        <td>Bandcamp Background</td>
+        <td><code>bandcamp/bandcamp-background-1280x1440.jpg</code></td>
+        <td>1280 × 1440 px</td>
+        <td>JPG</td>
+        <td>Bandcamp Profile</td>
+      </tr>
+      <tr>
+        <td>Bandcamp Header</td>
+        <td><code>bandcamp/bandcamp-header-975x180.jpg</code></td>
+        <td>975 × 180 px</td>
+        <td>JPG</td>
+        <td>Bandcamp Profile</td>
+      </tr>
+      <tr>
+        <td>YouTube Banner</td>
+        <td><code>youtube/youtube-banner-2560x1440.jpg</code></td>
+        <td>2560 × 1440 px</td>
+        <td>JPG</td>
+        <td>YouTube Channel</td>
+      </tr>
+      <tr>
+        <td>Profile Picture</td>
+        <td><code>youtube/youtube-profile-800x800.jpg</code></td>
+        <td>800 × 800 px</td>
+        <td>JPG</td>
+        <td>YouTube / General</td>
+      </tr>
+      <tr>
+        <td>Instagram Square</td>
+        <td><code>instagram/instagram-square-1080x1080.jpg</code></td>
+        <td>1080 × 1080 px</td>
+        <td>JPG</td>
+        <td>Instagram Feed</td>
+      </tr>
+      <tr>
+        <td>Instagram Vertical</td>
+        <td><code>instagram/instagram-vertical-1080x1350.jpg</code></td>
+        <td>1080 × 1350 px</td>
+        <td>JPG</td>
+        <td>Instagram Feed (4:5)</td>
+      </tr>
+      <tr>
+        <td>Instagram Story</td>
+        <td><code>instagram/instagram-story-1080x1920.jpg</code></td>
+        <td>1080 × 1920 px</td>
+        <td>JPG</td>
+        <td>Instagram Stories / Reels</td>
+      </tr>
+      <tr>
+        <td>Instagram Profile</td>
+        <td><code>instagram/instagram-profile-320x320.jpg</code></td>
+        <td>320 × 320 px</td>
+        <td>JPG</td>
+        <td>Instagram Profile</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 8. CSS VARIABLES -->
+  <div class="section">
+    <div class="eyebrow">08</div>
+    <h2>Code <em>Tokens.</em></h2>
+    <p>Copy these into any project to stay on brand immediately.</p>
+
+    <pre style="background:var(--ink);color:var(--paper);padding:28px;font-family:var(--mono);font-size:13px;line-height:1.8;overflow-x:auto;margin-top:16px"><code><span style="color:var(--dust)">/* WeZienWel Records — Design Tokens */</span>
+:root {
+  <span style="color:var(--dust)">/* Colours */</span>
+  --wzw-paper:   <span style="color:#E23D28">#F2EEE5</span>;
+  --wzw-ink:     <span style="color:#E23D28">#0E0E0C</span>;
+  --wzw-red:     <span style="color:#E23D28">#E23D28</span>;
+  --wzw-dust:    <span style="color:#E23D28">#B8B3A8</span>;
+  --wzw-ghost:   <span style="color:#E23D28">#1A1A17</span>;
+  --wzw-blue:    <span style="color:#E23D28">#1F3BFF</span>;
+
+  <span style="color:var(--dust)">/* Fonts */</span>
+  --wzw-serif:   "EB Garamond", Georgia, serif;
+  --wzw-sans:    "Space Grotesk", system-ui, sans-serif;
+  --wzw-mono:    "JetBrains Mono", monospace;
+
+  <span style="color:var(--dust)">/* Borders */</span>
+  --wzw-border:  1.5px solid #0E0E0C;
+  --wzw-border-heavy: 3px solid #0E0E0C;
+}</code></pre>
+  </div>
+
+  <footer>
+    © 2019–2026 WeZienWel Records · Amsterdam · Ghent · Lisbon<br>
+    A living symbiosis of sound and friendship · wezienwelrecords.com
+  </footer>
+
+</div>
+</body>
+</html>
