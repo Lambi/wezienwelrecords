@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780" role="img" aria-label="WeZienWel Records — stacked tribute logo">
+  <title>WeZienWel Records · Stacked Tribute</title>
+  <desc>A clean, grid-built tribute to the original WE / ZIEN / WEL hand-drawn mark — three rows of geometric capitals on a paper ground.</desc>
+
+  <rect width="600" height="780" fill="#F2EEE5"/>
+
+  <g fill="none" stroke="#0E0E0C" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter">
+
+    <!-- ============ ROW 1 : W E ============ (letters start y=60, 140 tall) -->
+    <!-- W  (x=170, 100 wide) -->
+    <path d="M170,60 L190,200 L220,100 L250,200 L270,60"/>
+    <!-- E  (x=310, 100 wide) -->
+    <path d="M410,60 L310,60 L310,200 L410,200 M310,130 L385,130"/>
+
+    <!-- ============ ROW 2 : Z I E N ============ (y=270, 140 tall) -->
+    <!-- Z  (x=60, 100 wide) -->
+    <path d="M60,270 L160,270 L60,410 L160,410"/>
+    <!-- I  (x=200, 100 wide) -->
+    <path d="M220,270 L300,270 M260,270 L260,410 M220,410 L300,410"/>
+    <!-- E  (x=340, 100 wide) -->
+    <path d="M440,270 L340,270 L340,410 L440,410 M340,340 L415,340"/>
+    <!-- N  (x=480, 100 wide) -->
+    <path d="M480,410 L480,270 L580,410 L580,270"/>
+
+    <!-- ============ ROW 3 : W E L ============ (y=480, 140 tall) -->
+    <!-- W  (x=100, 120 wide) -->
+    <path d="M100,480 L125,620 L160,510 L195,620 L220,480"/>
+    <!-- E  (x=260, 100 wide) -->
+    <path d="M360,480 L260,480 L260,620 L360,620 M260,550 L335,550"/>
+    <!-- L  (x=400, 100 wide) -->
+    <path d="M400,480 L400,620 L500,620"/>
+  </g>
+
+  <!-- baseline mark + wordmark subtitle -->
+  <g font-family="'Space Grotesk', 'Lato', sans-serif" font-weight="500" fill="#0E0E0C">
+    <line x1="60" y1="680" x2="540" y2="680" stroke="#0E0E0C" stroke-width="2"/>
+    <text x="300" y="720" text-anchor="middle" font-size="22" letter-spacing="6">RECORDS</text>
+    <text x="300" y="750" text-anchor="middle" font-size="14" letter-spacing="3" fill="#E23D28">EST · 2019 · GLOBAL</text>
+  </g>
+</svg>

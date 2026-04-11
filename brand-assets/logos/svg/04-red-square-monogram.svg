@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="WeZienWel Records red square monogram">
+  <title>WeZienWel Records · Red Square Monogram</title>
+  <desc>App-icon-ready red tile with stacked WE / ZIEN / WEL in paper cream. Works as a favicon, social avatar, or sticker.</desc>
+
+  <!-- background -->
+  <rect width="600" height="600" fill="#E23D28"/>
+  <!-- inner border -->
+  <rect x="30" y="30" width="540" height="540" fill="none" stroke="#F2EEE5" stroke-width="4"/>
+
+  <!-- stacked italic serif -->
+  <g font-family="'EB Garamond', 'URW Bookman', 'DejaVu Serif', Georgia, serif" font-style="italic" font-weight="800" fill="#F2EEE5" text-anchor="middle">
+    <text x="300" y="230" font-size="140">We</text>
+    <text x="300" y="370" font-size="140">Zien</text>
+    <text x="300" y="510" font-size="140">Wel</text>
+  </g>
+
+  <!-- corner tickers -->
+  <g font-family="'Space Grotesk', 'Lato', sans-serif" font-weight="600" font-size="18" letter-spacing="3" fill="#F2EEE5">
+    <text x="50" y="65">RECORDS</text>
+    <text x="550" y="65" text-anchor="end">WZW</text>
+    <text x="50" y="555">EST 2019</text>
+    <text x="550" y="555" text-anchor="end">GLOBAL</text>
+  </g>
+</svg>

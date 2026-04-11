@@ -83,10 +83,11 @@
     { "source": "/ig",            "destination": "https://instagram.com/wezienwel.records", "permanent": false },
     { "source": "/sc",            "destination": "https://soundcloud.com/wezienwelrecords", "permanent": false },
     { "source": "/yt",            "destination": "https://youtube.com/@wezienwelrecords", "permanent": false },
-    { "source": "/spotify",       "destination": "https://open.spotify.com/user/REPLACE", "permanent": false },
+    { "source": "/spotify",       "destination": "https://open.spotify.com/search/wezienwel%20records", "permanent": false },
+    { "source": "/site",          "destination": "https://we-zien-wel.com", "permanent": false },
 
-    { "source": "/demo",          "destination": "mailto:connect@flipandtrip.com?subject=Demo%20submission", "permanent": false },
-    { "source": "/press",         "destination": "mailto:connect@flipandtrip.com?subject=Press", "permanent": false },
-    { "source": "/booking",       "destination": "mailto:connect@flipandtrip.com?subject=Booking", "permanent": false }
+    { "source": "/demo",          "destination": "mailto:listen@wezienwelrecords.com?subject=Demo%20submission", "permanent": false },
+    { "source": "/press",         "destination": "mailto:listen@wezienwelrecords.com?subject=Press", "permanent": false },
+    { "source": "/booking",       "destination": "mailto:iris@round-about.be?subject=WeZienWel%20Ensemble%20booking", "permanent": false }
   ]
 }

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2000" role="img" aria-label="WeZienWel Records — logo system overview">
+  <title>WeZienWel Records · Logo system overview</title>
+  <desc>Five logo propositions: stacked tribute, horizontal wordmark, circular seal, red square monogram, triangle unity mark.</desc>
+
+  <rect width="1600" height="2000" fill="#F2EEE5"/>
+
+  <!-- header -->
+  <g font-family="'EB Garamond', 'URW Bookman', 'DejaVu Serif', Georgia, serif" font-style="italic" font-weight="800">
+    <text x="80" y="120" font-size="64" fill="#0E0E0C">WeZienWel Records</text>
+  </g>
+  <g font-family="'Space Grotesk', 'Lato', sans-serif" font-weight="500">
+    <text x="80" y="160" font-size="22" letter-spacing="4" fill="#E23D28">LOGO SYSTEM · 5 VARIANTS</text>
+    <line x1="80" y1="180" x2="1520" y2="180" stroke="#0E0E0C" stroke-width="3"/>
+  </g>
+
+  <!-- grid labels -->
+  <g font-family="'Space Grotesk', 'Lato', sans-serif" font-weight="600" font-size="20" letter-spacing="3" fill="#0E0E0C">
+    <text x="80"  y="260">01 — STACKED TRIBUTE</text>
+    <text x="540" y="260">02 — HORIZONTAL WORDMARK</text>
+    <text x="1080" y="260">03 — CIRCULAR SEAL</text>
+    <text x="80"  y="1220">04 — RED SQUARE MONOGRAM</text>
+    <text x="540" y="1220">05 — TRIANGLE UNITY MARK</text>
+  </g>
+
+  <!-- frames -->
+  <g fill="none" stroke="#0E0E0C" stroke-width="2">
+    <rect x="80"   y="280" width="440" height="900"/>
+    <rect x="540"  y="280" width="500" height="250"/>
+    <rect x="1080" y="280" width="440" height="440"/>
+    <rect x="80"   y="1240" width="440" height="440"/>
+    <rect x="540"  y="1240" width="440" height="540"/>
+  </g>
+
+  <!-- 01 stacked tribute mini embed -->
+  <g transform="translate(80,280) scale(0.733)">
+    <image href="../png/01-stacked-tribute.png" width="600" height="780"/>
+  </g>
+
+  <!-- 02 horizontal -->
+  <g transform="translate(540,280) scale(0.357)">
+    <image href="../png/02-horizontal-wordmark.png" width="1400" height="700"/>
+  </g>
+
+  <!-- 03 seal -->
+  <g transform="translate(1080,280) scale(0.733)">
+    <image href="../png/03-circular-seal.png" width="600" height="600"/>
+  </g>
+
+  <!-- 04 square -->
+  <g transform="translate(80,1240) scale(0.733)">
+    <image href="../png/04-red-square-monogram.png" width="600" height="600"/>
+  </g>
+
+  <!-- 05 triangle -->
+  <g transform="translate(540,1240) scale(0.537)">
+    <image href="../png/05-triangle-unity-mark.png" width="820" height="1000"/>
+  </g>
+
+  <!-- footer -->
+  <g font-family="'Space Grotesk', 'Lato', sans-serif" font-weight="500" font-size="16" letter-spacing="2" fill="#0E0E0C">
+    <text x="80" y="1900">PAPER #F2EEE5 · INK #0E0E0C · RED #E23D28 — SVG VECTOR + PNG 2000PX</text>
+    <text x="80" y="1930" fill="#E23D28">wezienwelrecords.com · independent · since 2019</text>
+  </g>
+</svg>

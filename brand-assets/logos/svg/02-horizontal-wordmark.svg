@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-label="WeZienWel Records horizontal wordmark">
+  <title>WeZienWel Records · Horizontal Wordmark</title>
+  <desc>A serif italic wordmark paired with a red mark, matching the website header. Works as a lockup at any width.</desc>
+
+  <rect width="1400" height="360" fill="#F2EEE5"/>
+
+  <!-- red square mark with serif 'w' -->
+  <g>
+    <rect x="60" y="100" width="160" height="160" fill="#E23D28" stroke="#0E0E0C" stroke-width="6"/>
+    <text x="140" y="232" text-anchor="middle"
+          font-family="'EB Garamond', 'URW Bookman', 'DejaVu Serif', Georgia, serif"
+          font-style="italic" font-weight="800" font-size="170" fill="#F2EEE5">w</text>
+  </g>
+
+  <!-- red underline/accent -->
+  <rect x="260" y="246" width="1080" height="6" fill="#E23D28"/>
+
+  <!-- main wordmark (single text, all ink) -->
+  <text x="260" y="220"
+        font-family="'EB Garamond', 'URW Bookman', 'DejaVu Serif', Georgia, serif"
+        font-style="italic" font-weight="800" font-size="170" fill="#0E0E0C">WeZienWel</text>
+
+  <!-- RECORDS label (left) -->
+  <text x="260" y="300"
+        font-family="'Space Grotesk', 'Lato', sans-serif"
+        font-weight="600" font-size="30" letter-spacing="10" fill="#0E0E0C">RECORDS</text>
+
+  <!-- tagline (right) -->
+  <text x="1340" y="300" text-anchor="end"
+        font-family="'Space Grotesk', 'Lato', sans-serif"
+        font-weight="500" font-size="22" letter-spacing="3" fill="#E23D28">EST 2019 · GLOBAL</text>
+</svg>
