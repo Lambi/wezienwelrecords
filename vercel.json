@@ -78,16 +78,25 @@
     { "source": "/wzw029", "destination": "https://wezienwelrecords.bandcamp.com/album/in-the-shade-of-the-moon-ep-wzw-029", "permanent": false },
     { "source": "/wzw028", "destination": "https://wezienwelrecords.bandcamp.com/album/innovation-lost-ep-wzw-028", "permanent": false },
     { "source": "/wzw027", "destination": "https://wezienwelrecords.bandcamp.com/album/the-lake-corkhills-farmhouse-wzw-027", "permanent": false },
+    { "source": "/wzw-r038", "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
+    { "source": "/wzwr038",  "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
 
-    { "source": "/bc",            "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
-    { "source": "/ig",            "destination": "https://instagram.com/wezienwel.records", "permanent": false },
-    { "source": "/sc",            "destination": "https://soundcloud.com/wezienwelrecords", "permanent": false },
-    { "source": "/yt",            "destination": "https://youtube.com/@wezienwelrecords", "permanent": false },
-    { "source": "/spotify",       "destination": "https://open.spotify.com/search/wezienwel%20records", "permanent": false },
-    { "source": "/site",          "destination": "https://we-zien-wel.com", "permanent": false },
+    { "source": "/bc",       "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
+    { "source": "/bandcamp", "destination": "https://wezienwelrecords.bandcamp.com", "permanent": false },
+    { "source": "/ig",       "destination": "https://instagram.com/wezienwelrecords", "permanent": false },
+    { "source": "/instagram","destination": "https://instagram.com/wezienwelrecords", "permanent": false },
+    { "source": "/sc",       "destination": "https://soundcloud.com/wezienwel", "permanent": false },
+    { "source": "/soundcloud","destination": "https://soundcloud.com/wezienwel", "permanent": false },
+    { "source": "/yt",       "destination": "https://youtube.com/@wezienwelrecords1487", "permanent": false },
+    { "source": "/youtube",  "destination": "https://youtube.com/@wezienwelrecords1487", "permanent": false },
+    { "source": "/spotify",  "destination": "https://open.spotify.com/playlist/2ssz0VxzXNLEgbb3plqVAG?si=01dda3ccd79b4a3b", "permanent": false },
+    { "source": "/playlist", "destination": "https://open.spotify.com/playlist/2ssz0VxzXNLEgbb3plqVAG?si=01dda3ccd79b4a3b", "permanent": false },
+    { "source": "/tiktok",   "destination": "https://www.tiktok.com/@wezienwelrecords", "permanent": false },
+    { "source": "/tt",       "destination": "https://www.tiktok.com/@wezienwelrecords", "permanent": false },
+    { "source": "/site",     "destination": "https://we-zien-wel.com", "permanent": false },
 
-    { "source": "/demo",          "destination": "mailto:listen@wezienwelrecords.com?subject=Demo%20submission", "permanent": false },
-    { "source": "/press",         "destination": "mailto:listen@wezienwelrecords.com?subject=Press", "permanent": false },
-    { "source": "/booking",       "destination": "mailto:iris@round-about.be?subject=WeZienWel%20Ensemble%20booking", "permanent": false }
+    { "source": "/press",    "destination": "https://www.standaard.be/nieuws/vinyl-wordt-groener/47905098.html", "permanent": false },
+    { "source": "/vinyl",    "destination": "https://www.standaard.be/nieuws/vinyl-wordt-groener/47905098.html", "permanent": false },
+    { "source": "/booking",  "destination": "mailto:iris@round-about.be?subject=WeZienWel%20Ensemble%20booking", "permanent": false }
   ]
 }

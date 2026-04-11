@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
+<title>Submit a Demo — WeZienWel Records</title>
+<meta name="description" content="Send us your demo. Upload your track directly to our Dropbox or share a private link via email. WeZienWel Records listens to every submission.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://wezienwelrecords.com/demo">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="theme-color" content="#0E0E0C" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F2EEE5" media="(prefers-color-scheme: light)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Submit a Demo — WeZienWel Records">
+<meta property="og:description" content="Send us your demo. Upload directly to our Dropbox or share a private link via email.">
+<meta property="og:url" content="https://wezienwelrecords.com/demo">
+<meta property="og:image" content="https://wezienwelrecords.com/assets/wzw037-cover.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#F2EEE5;--ink:#0E0E0C;--ghost:#1A1A17;--dust:#B8B3A8;
+    --red:#E23D28;
+    --serif:"EB Garamond",Georgia,serif;
+    --sans:"Space Grotesk",system-ui,sans-serif;
+    --mono:"JetBrains Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(226,61,40,.15)}
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
+  html,body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.45}
+  body{min-height:100dvh;overflow-x:clip;width:100%;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+  a{color:inherit;text-decoration:none;touch-action:manipulation}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+  img,svg{max-width:100%;display:block;height:auto}
+  input,textarea,select,button{font:inherit;color:inherit}
+
+  .mast{position:sticky;top:0;z-index:50;background:rgba(242,238,229,.95);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1.5px solid var(--ink)}
+  .mast-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;gap:12px}
+  .brand{display:flex;align-items:center;gap:14px;min-height:52px;transition:opacity .2s}
+  .brand:hover{opacity:.72}
+  .brand .mark{width:52px;height:52px;flex-shrink:0;display:block}
+  .brand .mark img{width:100%;height:100%;object-fit:contain;display:block}
+  .brand b{font-family:var(--serif);font-weight:800;font-size:20px;letter-spacing:-.015em;line-height:1;white-space:nowrap}
+  .brand b em{font-style:italic;color:var(--red)}
+  .mast .back{font-family:var(--mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:12px 16px;border:1.5px solid var(--ink);background:var(--paper);transition:background .18s,color .18s}
+  .mast .back:hover{background:var(--ink);color:var(--paper)}
+
+  .hero{padding:64px 20px 40px;border-bottom:1.5px solid var(--ink)}
+  .eyebrow{font-family:var(--mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--ghost);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:40px;height:2px;background:var(--ink)}
+  h1{font-family:var(--serif);font-weight:800;font-size:clamp(48px,14vw,160px);line-height:.86;letter-spacing:-.035em;margin-bottom:24px}
+  h1 em{font-style:italic;color:var(--red);font-weight:800}
+  .lede{font-family:var(--serif);font-size:clamp(19px,4.8vw,26px);line-height:1.35;max-width:30ch;color:var(--ghost)}
+
+  section{padding:56px 20px;border-bottom:1.5px solid var(--ink)}
+  section h2{font-family:var(--serif);font-weight:800;font-size:clamp(36px,8vw,68px);line-height:.92;letter-spacing:-.025em;margin-bottom:28px}
+  section h2 em{font-style:italic;color:var(--red)}
+
+  /* upload card */
+  .upload{background:var(--ink);color:var(--paper)}
+  .upload .eyebrow{color:var(--dust)}
+  .upload .eyebrow::before{background:var(--dust)}
+  .upload h2{color:var(--paper)}
+  .upload h2 em{color:var(--red)}
+  .upload p{font-family:var(--serif);font-size:clamp(18px,4.4vw,22px);line-height:1.45;color:var(--dust);margin-bottom:26px;max-width:42ch}
+  .upload .cta-big{display:block;padding:24px;text-align:center;background:var(--red);color:var(--paper);border:2px solid var(--red);font-family:var(--mono);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px;transition:transform .18s,box-shadow .18s;box-shadow:5px 5px 0 var(--paper)}
+  .upload .cta-big:hover,.upload .cta-big:focus-visible{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--paper)}
+  .upload .cta-big .big{display:block;font-family:var(--serif);font-style:italic;font-size:clamp(26px,6vw,36px);font-weight:800;text-transform:none;letter-spacing:-.015em;margin:6px 0 4px;line-height:1}
+  .upload .note{font-family:var(--mono);font-size:11px;color:var(--dust);text-transform:uppercase;letter-spacing:.08em;text-align:center;line-height:1.6}
+
+  /* form */
+  .form-wrap{background:var(--paper)}
+  form{display:flex;flex-direction:column;gap:16px;max-width:640px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-family:var(--mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--ghost)}
+  .field label b{color:var(--red);font-weight:700}
+  .field input,.field textarea,.field select{padding:14px 16px;border:1.5px solid var(--ink);background:var(--paper);font-family:var(--sans);font-size:16px;color:var(--ink);border-radius:0;min-height:48px;transition:border-color .18s,background .18s}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--red);background:#fff}
+  .field textarea{resize:vertical;min-height:110px;font-family:var(--sans);line-height:1.45}
+  .field .hint{font-family:var(--mono);font-size:10px;color:var(--dust);letter-spacing:.06em;text-transform:uppercase}
+  .submit{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:20px 26px;background:var(--ink);color:var(--paper);border:2px solid var(--ink);font-family:var(--mono);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;box-shadow:4px 4px 0 var(--red);margin-top:8px}
+  .submit:hover,.submit:focus-visible{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--red);background:var(--red);border-color:var(--red)}
+  .submit .arr{font-family:var(--serif);font-size:18px;font-weight:800}
+
+  /* guidelines */
+  .rules{background:var(--paper)}
+  .rules ul{list-style:none;padding:0;margin-top:16px}
+  .rules li{font-family:var(--serif);font-size:clamp(18px,4.4vw,22px);line-height:1.4;padding:18px 0;border-top:1.5px solid var(--ink);position:relative;padding-left:42px}
+  .rules li:last-child{border-bottom:1.5px solid var(--ink)}
+  .rules li::before{content:"◆";color:var(--red);font-size:16px;position:absolute;left:8px;top:24px}
+  .rules li b{font-weight:800;letter-spacing:-.01em}
+
+  footer{padding:48px 20px 40px;background:var(--ink);color:var(--paper)}
+  footer a{color:var(--paper);border-bottom:1px solid var(--red);padding-bottom:1px}
+  .fine{font-family:var(--mono);font-size:10px;color:var(--dust);text-transform:uppercase;letter-spacing:.08em;line-height:1.7;margin-top:16px}
+
+  @media (min-width:760px){
+    .mast-inner{padding:14px 40px}
+    .hero{padding:120px 40px 72px}
+    section{padding:96px 40px}
+    footer{padding:64px 40px 44px}
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-inner">
+    <a href="/" class="brand" aria-label="WeZienWel Records — Home">
+      <span class="mark"><img src="/assets/wzw-logo-ink.png" alt="WeZienWel Records" width="52" height="64"></span>
+      <b>WeZien<em>Wel</em></b>
+    </a>
+    <a class="back" href="/">← Home</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow">Demo submissions</div>
+  <h1>Send us <em>your sound.</em></h1>
+  <p class="lede">We listen to everything. If it's tuned to the same frequency, we'll reach out. Upload your track directly to our Dropbox or share a private link.</p>
+</section>
+
+<section class="upload">
+  <div class="eyebrow">Option 1 · Upload</div>
+  <h2>Drop it in our <em>Dropbox.</em></h2>
+  <p>The fastest way. Click the button, choose your audio file(s), add your name and email, and it arrives straight in our submissions folder. No Dropbox account needed on your side.</p>
+  <a id="dropbox-cta" class="cta-big" href="https://www.dropbox.com/request/REPLACE_WITH_YOUR_FILE_REQUEST_ID" target="_blank" rel="noopener noreferrer">
+    Upload to Dropbox
+    <span class="big">→ Drop your demo</span>
+    WAV · AIFF · MP3 · up to 2 GB
+  </a>
+  <p class="note">File request hosted by Dropbox · You don't need a Dropbox account</p>
+</section>
+
+<section class="form-wrap" id="form">
+  <div class="eyebrow">Option 2 · Email a link</div>
+  <h2>Or <em>send a link.</em></h2>
+  <p style="font-family:var(--serif);font-size:clamp(18px,4.4vw,22px);line-height:1.45;color:var(--ghost);margin-bottom:26px;max-width:42ch">Prefer WeTransfer, SoundCloud private, or your own server? Fill in the form and we'll get the link in our inbox at <b>listen@wezienwelrecords.com</b>.</p>
+
+  <form id="demoForm" onsubmit="return sendDemo(event)">
+    <div class="field">
+      <label for="artist">Artist / Project name <b>*</b></label>
+      <input id="artist" name="artist" type="text" required maxlength="120" autocomplete="name" placeholder="e.g. Cris Kai">
+    </div>
+    <div class="field">
+      <label for="email">Your email <b>*</b></label>
+      <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label for="title">Track / EP title <b>*</b></label>
+      <input id="title" name="title" type="text" required maxlength="160" placeholder="e.g. Same Frequency EP">
+    </div>
+    <div class="field">
+      <label for="genre">Style</label>
+      <select id="genre" name="genre">
+        <option value="">— choose one —</option>
+        <option>House</option>
+        <option>Deep House</option>
+        <option>Jazz / Jam</option>
+        <option>Live / Band</option>
+        <option>Broken Beat</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="link">Private listening link <b>*</b></label>
+      <input id="link" name="link" type="url" required placeholder="https://wetransfer.com/... or soundcloud.com/you/track/s-xxx">
+      <span class="hint">WeTransfer, SoundCloud private, Dropbox, Google Drive — anything we can stream</span>
+    </div>
+    <div class="field">
+      <label for="about">About you (optional)</label>
+      <textarea id="about" name="about" rows="4" maxlength="1200" placeholder="A few lines about the project, your past releases, what you're working on…"></textarea>
+    </div>
+    <button class="submit" type="submit">Send demo <span class="arr">→</span></button>
+    <p class="hint" id="formNote" style="margin-top:12px">By sending you confirm the material is yours to share. We listen to everything but can't always reply.</p>
+  </form>
+</section>
+
+<section class="rules">
+  <div class="eyebrow">Good to know</div>
+  <h2>How we <em>listen.</em></h2>
+  <ul>
+    <li><b>Send finished work.</b> We prefer mastered or near-final tracks over rough sketches.</li>
+    <li><b>Private links only.</b> Don't send us public releases — we're looking for unreleased material.</li>
+    <li><b>One project at a time.</b> Pick the one track or EP you most want us to hear.</li>
+    <li><b>Turnaround.</b> We listen to every submission but only reply if there's a fit. Give us 2–6 weeks.</li>
+    <li><b>Format.</b> WAV or AIFF preferred for files. 320 kbps MP3 is fine to start.</li>
+    <li><b>The frequency.</b> We release house, deep, jazz and live jam music — improvisation and groove over genre labels.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>Questions? <a href="mailto:listen@wezienwelrecords.com">listen@wezienwelrecords.com</a></p>
+  <p class="fine">© 2019–2026 WeZienWel Records · A global family<br>A living symbiosis of sound and friendship.</p>
+</footer>
+
+<script>
+// open external links in new tabs
+document.querySelectorAll('a[href]').forEach(a=>{
+  const h=a.getAttribute('href')||'';
+  if(!h||h.startsWith('#')||h.startsWith('mailto:')||h.startsWith('tel:')||h.startsWith('/')) return;
+  a.setAttribute('target','_blank');
+  a.setAttribute('rel','noopener noreferrer');
+});
+
+// Mailto fallback submission — opens the user's email client with all fields prefilled.
+// This works on any static host and never touches a server. If you want a fully
+// server-side submission later, swap this for a Formspree / Getform / Netlify Forms endpoint.
+function sendDemo(e){
+  e.preventDefault();
+  const f=document.getElementById('demoForm');
+  const artist=f.artist.value.trim();
+  const email=f.email.value.trim();
+  const title=f.title.value.trim();
+  const genre=f.genre.value.trim();
+  const link=f.link.value.trim();
+  const about=f.about.value.trim();
+
+  const subj=`Demo · ${artist} — ${title}`;
+  const bodyLines=[
+    `Artist / Project: ${artist}`,
+    `Track / EP title: ${title}`,
+    `Email:            ${email}`,
+    `Style:            ${genre||'—'}`,
+    `Private link:     ${link}`,
+    ``,
+    `About:`,
+    about||'—',
+    ``,
+    `— Sent from wezienwelrecords.com/demo`
+  ];
+  const mailto=`mailto:listen@wezienwelrecords.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+  window.location.href=mailto;
+
+  document.getElementById('formNote').textContent='Your email app should now open with the demo details prefilled. Hit send and we\'ll take it from there.';
+  document.getElementById('formNote').style.color='var(--red)';
+  return false;
+}
+</script>
+</body>
+</html>

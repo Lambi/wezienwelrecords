@@ -63,7 +63,7 @@
       "url":"https://wezienwelrecords.com/",
       "logo":{
         "@type":"ImageObject",
-        "url":"https://wezienwelrecords.com/assets/logo.svg",
+        "url":"https://wezienwelrecords.com/assets/icon-512.png",
         "width":512,
         "height":512
       },
@@ -98,9 +98,11 @@
       "areaServed":"Worldwide",
       "sameAs":[
         "https://wezienwelrecords.bandcamp.com",
-        "https://soundcloud.com/wezienwelrecords",
-        "https://www.instagram.com/wezienwel.records",
-        "https://youtube.com/@wezienwelrecords",
+        "https://soundcloud.com/wezienwel",
+        "https://www.instagram.com/wezienwelrecords",
+        "https://youtube.com/@wezienwelrecords1487",
+        "https://www.tiktok.com/@wezienwelrecords",
+        "https://open.spotify.com/playlist/2ssz0VxzXNLEgbb3plqVAG",
         "https://we-zien-wel.com"
       ],
       "member":[
@@ -192,8 +194,12 @@
   ]
 }
 </script>
-<link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
-<link rel="apple-touch-icon" href="/assets/logo.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -228,9 +234,11 @@
   /* ===== MOBILE FIRST ===== */
   .mast{position:sticky;top:0;z-index:50;background:rgba(242,238,229,.95);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1.5px solid var(--ink)}
   .mast-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;gap:12px}
-  .mast .brand{display:flex;align-items:center;gap:12px;min-height:48px}
-  .mast .brand .mark{width:44px;height:44px;background:var(--red);color:var(--paper);font-family:var(--serif);font-style:italic;font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;border:2px solid var(--ink);flex-shrink:0;line-height:1;padding-bottom:3px}
-  .mast .brand b{font-family:var(--serif);font-weight:800;font-size:22px;letter-spacing:-.015em;text-transform:none;line-height:1;white-space:nowrap}
+  .mast .brand{display:flex;align-items:center;gap:14px;min-height:52px;transition:opacity .2s}
+  .mast .brand:hover,.mast .brand:focus-visible{opacity:.72}
+  .mast .brand .mark{width:52px;height:52px;flex-shrink:0;display:block}
+  .mast .brand .mark img{width:100%;height:100%;object-fit:contain;display:block}
+  .mast .brand b{font-family:var(--serif);font-weight:800;font-size:20px;letter-spacing:-.015em;text-transform:none;line-height:1;white-space:nowrap}
   .mast .brand b em{font-style:italic;color:var(--red)}
   .mast .brand .lbl{display:none}
   .mast nav{display:none}
@@ -251,6 +259,14 @@
   .drawer-nav a:hover, .drawer-nav a.live{color:var(--red)}
   .drawer-foot{margin-top:32px;font-family:var(--mono);font-size:11px;color:var(--dust);text-transform:uppercase;letter-spacing:.08em;line-height:1.7}
   body.lock{overflow:hidden}
+
+  /* Spotify playlist embed strip */
+  .spotify-strip{background:var(--ink);border-bottom:1.5px solid var(--ink);padding:16px 20px 18px}
+  .spotify-strip .head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--paper);text-transform:uppercase;letter-spacing:.12em}
+  .spotify-strip .head .r{color:var(--red)}
+  .spotify-strip .head a{color:var(--paper);border-bottom:1px solid var(--red)}
+  .spotify-strip .wrap{border:1.5px solid var(--paper);padding:6px;background:var(--paper);border-radius:4px}
+  .spotify-strip iframe{display:block;width:100%;height:152px;border:0;border-radius:10px}
 
   .hero{padding:44px 20px 36px;border-bottom:1.5px solid var(--ink)}
   .cta-new{display:inline-flex;align-items:center;gap:14px;background:var(--red);color:var(--paper);padding:16px 20px 16px 18px;border:2px solid var(--ink);text-decoration:none;margin-bottom:32px;font-family:var(--mono);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;transition:transform .18s,background .18s;box-shadow:4px 4px 0 var(--ink);max-width:100%}
@@ -385,7 +401,7 @@
 <header class="mast" role="banner">
   <div class="mast-inner">
     <a href="#top" class="brand" aria-label="WeZienWel Records — Home">
-      <span class="mark" aria-hidden="true">W</span>
+      <span class="mark"><img src="/assets/wzw-logo-ink.png" alt="WeZienWel Records" width="52" height="64" loading="eager" fetchpriority="high"></span>
       <b>WeZien<em>Wel</em> <span class="lbl">Records</span></b>
     </a>
     <nav aria-label="Primary">
@@ -412,6 +428,20 @@
 </aside>
 
 <main id="main" role="main">
+
+<section class="spotify-strip" aria-label="WeZienWel Records Spotify playlist">
+  <div class="head">
+    <span>▶ Now Spinning · The WeZienWel Playlist <span class="r">◆</span> Updated weekly</span>
+    <a href="/spotify" aria-label="Open full playlist on Spotify">Open in Spotify →</a>
+  </div>
+  <div class="wrap">
+    <iframe title="WeZienWel Records playlist on Spotify"
+      src="https://open.spotify.com/embed/playlist/2ssz0VxzXNLEgbb3plqVAG?utm_source=generator&amp;theme=0"
+      width="100%" height="152" frameborder="0"
+      allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+  </div>
+</section>
 
 <section class="hero" aria-labelledby="hero-heading">
   <a class="cta-new" href="/there-is-a-place" aria-label="Listen to the new release: There Is A Place by Cris Kai">
@@ -538,7 +568,7 @@
     <a href="/spotify">Spotify</a>
     <a href="/yt">YouTube</a>
     <a href="/ig">Instagram</a>
-    <a href="https://we-zien-wel.com">we-zien-wel.com</a>
+    <a href="/tiktok">TikTok</a>
     <a href="/demo">Submit Demo</a>
     <a href="/press">Press</a>
   </div>
@@ -562,7 +592,7 @@ const RELEASES = [
 const grid=document.getElementById('grid');
 function render(f){
   grid.innerHTML=RELEASES.filter(r=>f==='all'||r.type===f).map(r=>`
-    <a class="card" href="${r.url}" aria-label="${r.cat} — ${r.name} by ${r.artist}">
+    <a class="card" href="${r.url}" target="_blank" rel="noopener noreferrer" aria-label="${r.cat} — ${r.name} by ${r.artist}">
       <div class="cov" role="img" aria-label="Cover art for ${r.name}" style="${r.cover?`background-image:url(${r.cover})`:`background:linear-gradient(135deg,#E23D28,#1A1A17)`}"></div>
       <div class="info">
         <div class="cat">${r.cat}</div>
@@ -594,7 +624,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')toggleD(false)});
 // top tiles (latest 4)
 const tiles=document.getElementById('tiles');
 tiles.innerHTML=RELEASES.slice(0,4).map(r=>`
-  <a class="tile" href="${r.url}">
+  <a class="tile" href="${r.url}" target="_blank" rel="noopener noreferrer">
     <div class="tile-cov" style="${r.cover?`background-image:url(${r.cover})`:`background:linear-gradient(135deg,#E23D28,#1A1A17)`}"></div>
     <div class="tile-info">
       <div class="tile-cat">${r.cat}</div>
@@ -603,6 +633,14 @@ tiles.innerHTML=RELEASES.slice(0,4).map(r=>`
     </div>
     <div class="tile-arr">→</div>
   </a>`).join('');
+
+// open all external hyperlinks in a new tab, keep homepage open
+document.querySelectorAll('a[href]').forEach(a=>{
+  const h=a.getAttribute('href')||'';
+  if(!h||h.startsWith('#')||h.startsWith('mailto:')||h.startsWith('tel:')||h.startsWith('javascript:')) return;
+  a.setAttribute('target','_blank');
+  a.setAttribute('rel','noopener noreferrer');
+});
 
 // smooth scroll offset for sticky header
 document.documentElement.style.scrollPaddingTop='70px';
