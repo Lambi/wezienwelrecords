@@ -209,7 +209,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="/assets/wzw037-cover.png" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/wzw037-cover.webp" fetchpriority="high" type="image/webp">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -294,7 +294,7 @@
   .fact-val .roll{display:inline-block;min-width:1.4ch}
 
   .mq{border-bottom:1.5px solid var(--ink);background:var(--ink);color:var(--paper);overflow:hidden;padding:22px 0}
-  .mq-t{display:flex;gap:48px;white-space:nowrap;animation:sl 42s linear infinite;font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(34px,8.5vw,68px);line-height:1}
+  .mq-t{display:flex;gap:48px;white-space:nowrap;animation:sl 26s linear infinite;font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(34px,8.5vw,68px);line-height:1}
   .mq-t span{flex-shrink:0}
   .mq-t .r{color:var(--red)}
   @keyframes sl{to{transform:translateX(-50%)}}
@@ -314,7 +314,7 @@
   .now .eyebrow::before{background:var(--dust)}
   .now h2{color:var(--paper)}
   .now-card{margin-top:28px;border:2px solid var(--paper);padding:20px}
-  .art{aspect-ratio:1/1;background:#222 url("assets/wzw037-cover.png") center/cover no-repeat;margin-bottom:24px;border:1px solid var(--paper)}
+  .art{aspect-ratio:1/1;background:#222 url("assets/wzw037-cover.webp") center/cover no-repeat;margin-bottom:24px;border:1px solid var(--paper)}
   .now-info .cat{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--red);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
   .now-info .ttl{font-family:var(--serif);font-style:italic;font-weight:800;font-size:clamp(42px,11vw,88px);line-height:.92;margin-bottom:10px}
   .now-info .by{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--dust);margin-bottom:28px;line-height:1.5}
@@ -350,6 +350,8 @@
   .contact .row b{display:block;font-family:var(--mono);font-size:10px;color:var(--dust);letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
   .contact .row span{word-break:break-word}
 
+  /* defer off-screen sections from layout calc */
+  #cat, #artists, .ensemble, .contact{content-visibility:auto;contain-intrinsic-size:0 600px}
   footer{padding:56px 20px 44px;background:var(--ink);color:var(--paper)}
   footer h3{font-family:var(--serif);font-weight:800;font-style:italic;font-size:clamp(48px,13vw,96px);letter-spacing:-.025em;margin-bottom:32px;line-height:.88}
   .sox{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:36px}
@@ -541,17 +543,17 @@
 
 <script>
 const RELEASES = [
-  {cat:"WZW-037",type:"single",name:"There Is A Place",artist:"Cris Kai",url:"/there-is-a-place",cover:"assets/wzw037-cover.png"},
-  {cat:"WZW-036",type:"ep",name:"In The Shade Of The Moon (Remix EP)",artist:"Various",url:"/wzw036",cover:"assets/wzw036.jpeg"},
-  {cat:"WZW-035",type:"ep",name:"Bangers EP",artist:"Various",url:"/wzw035",cover:"assets/wzw035.png"},
-  {cat:"WZW-034",type:"ep",name:"Like Leaves EP",artist:"FBR",url:"/wzw034",cover:"assets/wzw034.jpg"},
-  {cat:"WZW-033",type:"album",name:"FBR Studio Archive",artist:"FBR",url:"/wzw033",cover:"assets/wzw033.jpg"},
-  {cat:"WZW-032",type:"single",name:"Taxi Love",artist:"FBR",url:"/wzw032",cover:"assets/wzw032.png"},
-  {cat:"WZW-031",type:"single",name:"Excuse Me (ft. Victoria Chase)",artist:"WeZienWel",url:"/wzw031",cover:"assets/wzw031.png"},
-  {cat:"WZW-030",type:"single",name:"Thin King",artist:"Master William",url:"/wzw030",cover:"assets/wzw030.png"},
-  {cat:"WZW-029",type:"ep",name:"Taxi Love",artist:"Various",url:"/wzw029",cover:"assets/wzw029.jpg"},
-  {cat:"WZW-028",type:"ep",name:"Innovation Lost EP",artist:"WellSee & Will Hart",url:"/wzw028",cover:"assets/wzw028.jpg"},
-  {cat:"WZW-R038",type:"rework",name:"Kollektiv Jupiter",artist:"Dektro feat. ELOii LEONii",url:"/wzw-r038",cover:"assets/wzw-r038.png"},
+  {cat:"WZW-037",type:"single",name:"There Is A Place",artist:"Cris Kai",url:"/there-is-a-place",cover:"assets/wzw037-cover.webp"},
+  {cat:"WZW-036",type:"ep",name:"In The Shade Of The Moon (Remix EP)",artist:"Various",url:"/wzw036",cover:"assets/wzw036.webp"},
+  {cat:"WZW-035",type:"ep",name:"Bangers EP",artist:"Various",url:"/wzw035",cover:"assets/wzw035.webp"},
+  {cat:"WZW-034",type:"ep",name:"Like Leaves EP",artist:"FBR",url:"/wzw034",cover:"assets/wzw034.webp"},
+  {cat:"WZW-033",type:"album",name:"FBR Studio Archive",artist:"FBR",url:"/wzw033",cover:"assets/wzw033.webp"},
+  {cat:"WZW-032",type:"single",name:"Taxi Love",artist:"FBR",url:"/wzw032",cover:"assets/wzw032.webp"},
+  {cat:"WZW-031",type:"single",name:"Excuse Me (ft. Victoria Chase)",artist:"WeZienWel",url:"/wzw031",cover:"assets/wzw031.webp"},
+  {cat:"WZW-030",type:"single",name:"Thin King",artist:"Master William",url:"/wzw030",cover:"assets/wzw030.webp"},
+  {cat:"WZW-029",type:"ep",name:"Taxi Love",artist:"Various",url:"/wzw029",cover:"assets/wzw029.webp"},
+  {cat:"WZW-028",type:"ep",name:"Innovation Lost EP",artist:"WellSee & Will Hart",url:"/wzw028",cover:"assets/wzw028.webp"},
+  {cat:"WZW-R038",type:"rework",name:"Kollektiv Jupiter",artist:"Dektro feat. ELOii LEONii",url:"/wzw-r038",cover:"assets/wzw-r038.webp"},
 ];
 const grid=document.getElementById('grid');
 function render(f){
